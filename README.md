@@ -11,6 +11,7 @@ This repository contains a full-stack project and data-processing scripts develo
 > `python partA/part1_logs.py` for log analysis  
 > `python partA/part1_step1_hourly_avg.py` for time series aggregation
 > `python partA/part2_step2_chunked_avg.py` for time series aggregation
+> In Chapter 1, Section 1, I wrote the time complexity and space complexity in a comment at the end of the part1_logs.py file
 
 ### Part B – SQL (SQL Server)
 - **Family Tree Modeling**: Builds `Person` and `FamilyTree` tables with parent/child/spouse relations and a final view of family connections.
