@@ -1,0 +1,86 @@
+/* רקע כללי עם גרדיאנט */
+.welcome-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #c8e6c9);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* כרטיס שקוף עם צל עדין */
+.welcome-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 50px 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.welcome-card:hover {
+  transform: scale(1.02);
+}
+
+/* כותרת ראשית */
+.welcome-title {
+  font-size: 2.4rem;
+  color: #2e3a59;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* תיאור */
+.welcome-subtitle {
+  font-size: 1.1rem;
+  color: #4b4b4b;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* קבוצת כפתורים */
+.welcome-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* כפתור בסיסי */
+.btn {
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* כפתור כניסה */
+.login-btn {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.login-btn:hover {
+  background-color: #1976d2;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.3);
+}
+
+/* כפתור הרשמה */
+.register-btn {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.register-btn:hover {
+  background-color: #388e3c;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}

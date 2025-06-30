@@ -1,0 +1,179 @@
+/* רקע כללי */
+.order-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e3a59;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.order-wrapper h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #2e3a59;
+}
+
+/* קופסאות כלליות */
+.vendor-select,
+.product-table,
+.basket-display,
+.history-log {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+/* טקסט */
+.vendor-select label,
+.product-table h3,
+.basket-display h3,
+.history-log h3 {
+  color: #2e3a59;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+/* בוחר ספק */
+.vendor-select select {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #f1f8e9;
+  border: 1px solid #c5e1a5;
+  color: #2e3a59;
+  transition: 0.3s;
+}
+
+.vendor-select select:focus {
+  border-color: #2196f3;
+  outline: none;
+  background-color: #e3f2fd;
+}
+
+/* טבלה */
+.product-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.product-table th,
+.product-table td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #2e3a59;
+}
+
+.product-table input[type="number"] {
+  width: 70px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #c5e1a5;
+  text-align: center;
+  background-color: #f1f8e9;
+  transition: 0.3s;
+}
+
+.product-table input[type="number"]:focus {
+  border-color: #2196f3;
+  outline: none;
+  background-color: #e3f2fd;
+}
+
+/* כפתור "הוסף" */
+.product-table button {
+  background-color: #388e3c;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.product-table button:hover {
+  background-color: #2e7d32;
+  transform: scale(1.05);
+}
+
+/* סל קניות */
+.basket-display ul,
+.history-log ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.basket-display li,
+.history-log li {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #f1f8e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #2e3a59;
+}
+
+.remove-item-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.remove-item-btn:hover {
+  background-color: #c62828;
+  transform: scale(1.05);
+}
+
+/* כפתור שליחה */
+.basket-display button {
+  margin-top: 20px;
+  padding: 14px 24px;
+  background-color: #2196f3;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.basket-display button:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+}
+
+/* היסטוריה */
+.history-log ul ul {
+  margin-top: 8px;
+  margin-right: 20px;
+  border-right: 2px solid #c5e1a5;
+  padding-right: 10px;
+}
+
+.history-log li ul li {
+  font-size: 0.95rem;
+  color: #4e6d52;
+}

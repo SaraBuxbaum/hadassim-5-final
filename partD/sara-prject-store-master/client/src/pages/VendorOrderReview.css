@@ -1,0 +1,91 @@
+.vendor-orders-wrapper {
+    direction: rtl;
+    padding: 30px;
+    background: #f1f8e9;
+    min-height: 100vh;
+  }
+  
+  .vendor-orders-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 40px 35px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .vendor-orders-title {
+    font-size: 2rem;
+    color: #2e3a59;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .vendor-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .vendor-table th,
+  .vendor-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #c5e1a5;
+    text-align: right;
+  }
+  
+  .vendor-table th {
+    background-color: #e3f2fd;
+    color: #2e3a59;
+  }
+  
+  .vendor-table tr:hover {
+    background-color: #f9fbe7;
+  }
+  
+  .approve-btn,
+  .reject-btn {
+    margin: 4px;
+    padding: 6px 14px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .approve-btn {
+    background-color: #c8e6c9;
+    color: #388e3c;
+    border: 1px solid #a5d6a7;
+  }
+  
+  .reject-btn {
+    background-color: #ffcdd2;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+  }
+  
+  .approve-btn:hover {
+    background-color: #a5d6a7;
+  }
+  
+  .reject-btn:hover {
+    background-color: #ef9a9a;
+  }
+  
+  .status-label {
+    font-weight: bold;
+    color: #2e3a59;
+  }
+  
+  .vendor-loader {
+    text-align: center;
+    padding: 100px;
+    font-size: 1.5rem;
+    color: #607d8b;
+  }
+  
