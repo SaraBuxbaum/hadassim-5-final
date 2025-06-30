@@ -36,17 +36,27 @@ for code, count in most_common_errors:
 print(f"Total unique error codes: {len(total_counter)}")
 
 """
-זמן:
-O(n) – מעבר על כל השורות כדי לחלץ קוד שגיאה.
+Time Complexity:
+Let L be the number of lines in the Excel file, E the number of unique error codes, and N the number of top errors to return.
 
-O(n) – מיון לפי שכיחות (most_common).
+Reading and parsing lines: O(L)
 
-אם יש m קודים שונים, most_common(N) היא O(m log N).
+Counting errors: O(L)
 
-זיכרון:
-O(n) לאחסון הקוד המלא.
+Merging Counters: O(E)
 
-O(m) עבור Counter של כל חלק.
+Extracting top N: O(E log N)
+
+Index search for N errors: O(L × N)
+ Total: O(L + E log N) (since S and N are small)
+
+Space Complexity:
+
+Raw lines and codes: O(L)
+
+Counters and top results: O(E)
+ Total: O(L + E)
+
 
 
 """
