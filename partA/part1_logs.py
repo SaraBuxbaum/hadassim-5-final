@@ -36,27 +36,33 @@ for code, count in most_common_errors:
 print(f"Total unique error codes: {len(total_counter)}")
 
 """
+------------------------
+Time and Space Complexity Analysis:
+Let:
+- L = number of lines in the Excel file
+- S = average length of each line
+- E = number of unique error codes
+- N = number of top errors to return (e.g., 5)
+- K = average number of appearances per top error
+
 Time Complexity:
-Let L be the number of lines in the Excel file, E the number of unique error codes, and N the number of top errors to return.
-
-Reading and parsing lines: O(L)
-
-Counting errors: O(L)
-
-Merging Counters: O(E)
-
-Extracting top N: O(E log N)
-
-Index search for N errors: O(L × N)
- Total: O(L + E log N) (since S and N are small)
+- Reading and parsing lines: O(L × S)
+- Extracting error codes: O(L × S)
+- Splitting into chunks: O(L)
+- Counting frequencies per chunk: O(L)
+- Merging counters: O(E)
+- Finding top-N errors: O(E log N)
+- Searching for indices of top errors: O(L × N)
+ Total: O(L × (S + N) + E log N)
 
 Space Complexity:
-
-Raw lines and codes: O(L)
-
-Counters and top results: O(E)
- Total: O(L + E)
-
-
-
+- List of raw lines and error codes: O(L)
+- Counters (merged): O(E)
+- Top-N indices (optional): O(K × N)
+ Total: O(L + E + K × N)
+------------------------
 """
+
+
+
+
