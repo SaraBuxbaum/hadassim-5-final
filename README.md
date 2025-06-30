@@ -31,6 +31,6 @@ A system for suppliers and the store owner to manage product orders and inventor
 > This enhances security by preventing unauthorized users from accessing manager privileges directly through the app.
 
 Suppliers and the manager see live updates and actions in parallel, simulating a real-world system with different users on different devices.
-
+I uploaded the server's env file so that the application can be run. There are no passwords or security information there (which is why this file is not usually uploaded).
 ---
 
